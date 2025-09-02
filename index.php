@@ -1,33 +1,25 @@
 <?php
-// Integers
+
+// Arrays
+
+$names = ['Rot','John','Pato','Alexis'];
+
+//print_r($names[0]);
+
+//Adding a new value to an array
+
+array_push($names, 'Chibs');
+//print_r($names);
 
 
-$a = 40;
-$b = 20;
-$c = 4.56;
+// Delete a value from an array
+array_splice($names, 0, 1);
+//print_r($names);
 
-//+ -/ *
+//updating an existing array value
 
-//echo $b + $c;
-//echo $b - $c;
-//echo $a / $b;
-
-//Area of Circle
-$radius = 6;
-$pi = 3.1425;
-
-$area = $pi * $radius**2;
-
-//echo $area;
-
-//Temp. coverter 
-$celsius = 200;
-
-$fahrenheit = $celsius * 9 / 5 + 32;
-
-echo $fahrenheit;
-
-
+$names[1] = 'Patrick';
+print_r($names);
 
 
 
